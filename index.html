@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>OmegaUTTEC · Plataforma de estadías profesionales</title>
-<meta name="description" content="OmegaUTTEC: plataforma web que lleva la estadía profesional de la UTTEC de la postulación a la liberación. Conoce el proyecto y al equipo Novus Tek.">
-<meta name="theme-color" content="#14305C">
-<meta property="og:title" content="OmegaUTTEC · Plataforma de estadías profesionales">
-<meta property="og:description" content="Tu estadía, de la postulación a la liberación, en un solo lugar.">
+<title>OmegaUTTEC · Portal de Vinculación Académica</title>
+<meta name="description" content="OmegaUTTEC: portal de vinculación académica que acompaña la estadía profesional de la UTTEC, de la postulación a la liberación.">
+<meta name="theme-color" content="#0e1f2f">
+<meta property="og:title" content="OmegaUTTEC · Portal de Vinculación Académica">
+<meta property="og:description" content="Tu estadía profesional, de la postulación a la liberación, en un solo lugar.">
 <meta property="og:type" content="website">
 <link rel="icon" href="expo/img/omega-sm.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
 <div class="progress" aria-hidden="true"><span></span></div>
 
 <header class="topbar">
-  <a class="brand-mini" href="#inicio">OmegaUTTEC · Novus Tek</a>
+  <a class="brand-mini" href="#inicio"><img src="expo/img/omega-sm.png" alt=""><span>OmegaUTTEC</span></a>
   <div class="top-right">
     <a class="top-cta" href="https://blemish-symptom-lumber.ngrok-free.dev" target="_blank" rel="noopener">Abrir plataforma ↗</a>
     <div class="lang-switch">
@@ -36,196 +36,144 @@
 
 <nav class="dots" aria-label="Secciones">
   <a href="#inicio" title="Inicio"><span>Inicio</span></a>
+  <a href="#que-es" title="Qué es"><span>Qué es</span></a>
+  <a href="#errores" title="Errores que mitiga"><span>Errores</span></a>
+  <a href="#flujo" title="Cómo funciona"><span>Flujo</span></a>
+  <a href="#pantallas" title="Vistas reales"><span>Pantallas</span></a>
+  <a href="#funciones" title="Funciones"><span>Funciones</span></a>
+  <a href="#perfiles" title="Perfiles"><span>Perfiles</span></a>
+  <a href="#arquitectura" title="Arquitectura"><span>Arquitectura</span></a>
+  <a href="#desarrollo" title="Desarrollo"><span>Desarrollo</span></a>
   <a href="#equipo" title="Equipo"><span>Equipo</span></a>
-  <a href="#identidad" title="Identidad"><span>Identidad</span></a>
-  <a href="#problema" title="Problema"><span>Problema</span></a>
-  <a href="#solucion" title="Solución"><span>Solución</span></a>
-  <a href="#flujo" title="Flujo"><span>Flujo</span></a>
-  <a href="#ciclo" title="Ciclo OmegaUTTEC"><span>Ciclo OmegaUTTEC</span></a>
-  <a href="#tecnologia" title="Tecnología"><span>Tecnología</span></a>
-  <a href="#metodologia" title="Metodología"><span>Metodología</span></a>
-  <a href="#cronograma" title="Cronograma"><span>Cronograma</span></a>
-  <a href="#riesgos" title="Riesgos"><span>Riesgos</span></a>
-  <a href="#stakeholders" title="Stakeholders"><span>Stakeholders</span></a>
   <a href="#cierre" title="Cierre"><span>Cierre</span></a>
 </nav>
 
 <main>
 
-<!-- 1 · PORTADA -->
+<!-- 01 · PORTADA -->
 <section class="slide hero" id="inicio">
-  <div class="wrap">
-    <div style="display:grid;gap:22px">
-      <p class="kicker"><span class="t" lang="es">Plataforma de estadías profesionales</span><span class="t" lang="en">Professional internship platform</span></p>
-      <h1>Omega<b>UTTEC</b></h1>
+  <span class="watermark" aria-hidden="true">Ω</span>
+  <div class="wrap hero-wrap">
+    <div class="hero-copy">
+      <p class="kicker"><span class="t" lang="es">Universidad Tecnológica de Tecámac</span><span class="t" lang="en">Universidad Tecnológica de Tecámac</span></p>
+      <h1 class="wordmark">Omega<b>UTTEC</b></h1>
+      <p class="hero-sub"><span class="t" lang="es">Portal de Vinculación Académica para estadías profesionales</span><span class="t" lang="en">Academic Placement Portal for professional internships</span></p>
       <p class="slogan"><span class="t" lang="es">Tu estadía, de la postulación a la liberación, en un solo lugar.</span><span class="t" lang="en">Your internship, from application to sign-off, in one place.</span></p>
       <div class="btns">
-        <a class="btn p" href="https://blemish-symptom-lumber.ngrok-free.dev" target="_blank" rel="noopener"><span class="t" lang="es">Abrir OmegaUTTEC</span><span class="t" lang="en">Open OmegaUTTEC</span> ↗</a>
-        <a class="btn" href="#equipo"><span class="t" lang="es">Recorrer el proyecto</span><span class="t" lang="en">Tour the project</span></a>
+        <a class="btn p" href="https://blemish-symptom-lumber.ngrok-free.dev" target="_blank" rel="noopener"><span class="t" lang="es">Abrir la plataforma</span><span class="t" lang="en">Open the platform</span> ↗</a>
+        <a class="btn" href="#flujo"><span class="t" lang="es">Ver cómo funciona</span><span class="t" lang="en">See how it works</span></a>
       </div>
-      <div class="hero-meta">
-        <span><span class="t" lang="es">Desarrollado por</span><span class="t" lang="en">Built by</span> <strong>Novus Tek</strong></span>
-        <span><span class="t" lang="es">Asignatura</span><span class="t" lang="en">Course</span>: <strong><span class="t" lang="es">Gestión del Proceso de Desarrollo de Software</span><span class="t" lang="en">Software Development Process Management</span></strong></span>
-        <span><span class="t" lang="es">Profesor</span><span class="t" lang="en">Professor</span>: <strong>Hugo Humberto Arvizu Rosas</strong></span>
-        <span><span class="t" lang="es">Grupo</span><span class="t" lang="en">Group</span>: <strong>10IDS2</strong></span>
-      </div>
-      <div class="hero-foot">
-        <img src="expo/img/uttec.jpg" alt="Universidad Tecnológica de Tecámac">
-        <img src="expo/img/novustek.jpg" alt="Novus Tek">
-      </div>
+      <ul class="chips" aria-label="Datos clave">
+        <li><span class="t" lang="es">Web y app móvil</span><span class="t" lang="en">Web and mobile app</span></li>
+        <li><span class="t" lang="es">4 perfiles de usuario</span><span class="t" lang="en">4 user profiles</span></li>
+        <li><span class="t" lang="es">7 etapas de seguimiento</span><span class="t" lang="en">7 tracking stages</span></li>
+        <li><span class="t" lang="es">Revisión asistida por IA</span><span class="t" lang="en">AI-assisted review</span></li>
+      </ul>
+      <p class="hero-credit"><span class="t" lang="es">Desarrollado por</span><span class="t" lang="en">Developed by</span> <strong>Novus Tek</strong></p>
     </div>
-    <div class="hero-logo"><img src="expo/img/omega.png" alt="Logo OmegaUTTEC"></div>
-  </div>
-  <span class="pager">01 / 13</span>
-</section>
-
-<!-- 2 · EQUIPO -->
-<section class="slide" id="equipo">
-  <div class="wrap">
-    <div class="team-top">
-      <img src="expo/img/novustek.jpg" alt="Logo Novus Tek">
-      <div class="head">
-        <p class="kicker"><span class="n">02</span> <span class="t" lang="es">¿Quiénes somos?</span><span class="t" lang="en">Who are we?</span></p>
-        <h2 class="h2">Novus Tek</h2>
-        <p class="lead"><span class="t" lang="es">“Innovación que conecta.” Un equipo de cinco que diseña y construye software para resolver procesos reales de la universidad.</span><span class="t" lang="en">“Innovation that connects.” A five-person team that designs and builds software to solve real university processes.</span></p>
-      </div>
-    </div>
-    <figure class="creators">
-     
-      <figcaption><span class="t" lang="es">Los creadores de OmegaUTTEC</span><span class="t" lang="en">The creators of OmegaUTTEC</span></figcaption>
-    </figure>
-    <div class="team">
-      <div class="member lead"><span class="lead-badge"><span class="t" lang="es">Líder del proyecto</span><span class="t" lang="en">Project lead</span></span><img src="expo/img/cristobal.jpg" alt="Cristóbal Gordillo"><span class="role-tag">LUX · PM</span><h3>Cristóbal Gordillo</h3><p><span class="t" lang="es">Líder de Diseño y Experiencia de Usuario</span><span class="t" lang="en">Design &amp; UX Lead</span></p></div>
-      <div class="member"><img src="expo/img/jahzeel.jpg" alt="Jessica Alvarado"><span class="role-tag">LPG</span><h3>Jessica Alvarado</h3><p><span class="t" lang="es">Líder de Programación</span><span class="t" lang="en">Programming Lead</span></p></div>
-      <div class="member"><img src="expo/img/rodrigo.jpg" alt="Rodrigo Villeda"><span class="role-tag">CDS</span><h3>Rodrigo Villeda</h3><p><span class="t" lang="es">Coordinador de Desarrollo de Software</span><span class="t" lang="en">Software Development Coordinator</span></p></div>
-      <div class="member"><img src="expo/img/xizmel.jpg" alt="Xizmel Hernández"><span class="role-tag">CDL</span><h3>Xizmel Hernández</h3><p><span class="t" lang="es">Coordinadora de Diseño y Logística</span><span class="t" lang="en">Design &amp; Logistics Coordinator</span></p></div>
-      <div class="member"><img src="expo/img/demetrio.jpg" alt="Demetrio Peralta"><span class="role-tag">ROL</span><h3>Demetrio Peralta</h3><p><span class="t" lang="es">Responsable de Operaciones y Logística</span><span class="t" lang="en">Operations &amp; Logistics Manager</span></p></div>
-    </div>
-    <div class="fusion">
-      <p class="fusion-lbl"><span class="t" lang="es">Origen de Novus Tek</span><span class="t" lang="en">Where Novus Tek comes from</span></p>
-      <div class="fusion-row">
-        <div class="fusion-co"><img src="expo/img/Code_Edge.png" alt="Code Edge"><b>Code Edge</b></div>
-        <span class="fusion-op" aria-hidden="true">+</span>
-        <div class="fusion-co"><span class="mark" aria-hidden="true">CN</span><b>CodeNex</b></div>
-        <span class="fusion-op" aria-hidden="true">→</span>
-        <div class="fusion-co fusion-out"><img src="expo/img/novustek.jpg" alt="Novus Tek"><b>Novus Tek</b></div>
-      </div>
-      <p class="fusion-note"><span class="t" lang="es">Code Edge y CodeNex se fusionaron para crear Novus Tek.</span><span class="t" lang="en">Code Edge and CodeNex merged to create Novus Tek.</span></p>
+    <div class="hero-art">
+      <div class="hero-logo"><img src="expo/img/omega.png" alt="Logo OmegaUTTEC"></div>
     </div>
   </div>
-  <span class="pager">02 / 13</span>
+  <span class="pager">01 / 11</span>
 </section>
 
-<!-- 3 · IDENTIDAD -->
-<section class="slide tint" id="identidad">
+<!-- 02 · QUÉ ES -->
+<section class="slide" id="que-es">
   <div class="wrap">
     <div class="head">
-      <p class="kicker"><span class="n">03</span> <span class="t" lang="es">Identidad visual</span><span class="t" lang="en">Visual identity</span></p>
-      <h2 class="h2"><span class="t" lang="es">Logo, colores y por qué</span><span class="t" lang="en">Logo, colors and why</span></h2>
+      <p class="kicker"><span class="n">02</span> <span class="t" lang="es">¿Qué es?</span><span class="t" lang="en">What is it?</span></p>
+      <h2 class="h2"><span class="t" lang="es">Un solo portal para toda la estadía</span><span class="t" lang="en">One portal for the entire internship</span></h2>
+      <p class="lead"><span class="t" lang="es">OmegaUTTEC conecta a alumnos, asesores académicos, asesores de empresa y Vinculación. Lleva el proceso desde que el alumno se postula a una empresa hasta que recibe su carta de término institucional.</span><span class="t" lang="en">OmegaUTTEC connects students, academic advisors, company advisors and the Placement Office. It takes the process from the student’s application to a company until they receive their official completion letter.</span></p>
     </div>
-    <div class="ident">
-      <div class="swatches">
-        <div class="sw"><i style="background:var(--navy)"></i><div><b><span class="t" lang="es">Azul marino</span><span class="t" lang="en">Navy blue</span></b><small>#14305C</small><p><span class="t" lang="es">Confianza y seriedad institucional: aquí viven datos de alumnos y empresas.</span><span class="t" lang="en">Trust and institutional seriousness: student and company data lives here.</span></p></div></div>
-        <div class="sw"><i style="background:var(--teal)"></i><div><b>Teal</b><small>#0D9488</small><p><span class="t" lang="es">Tecnología y crecimiento. Es el color principal de la plataforma.</span><span class="t" lang="en">Technology and growth. It is the platform’s main color.</span></p></div></div>
-        <div class="sw"><i style="background:var(--cyan)"></i><div><b>Cyan</b><small>#22B8D6</small><p><span class="t" lang="es">Innovación: lo tomamos de “TEK” en nuestro logo y lo usamos para la IA.</span><span class="t" lang="en">Innovation: taken from “TEK” in our logo and used to mark the AI.</span></p></div></div>
-        <div class="sw"><i style="background:var(--uttec)"></i><div><b><span class="t" lang="es">Verde UTTEC</span><span class="t" lang="en">UTTEC green</span></b><small>#3F9A3A</small><p><span class="t" lang="es">Pertenencia: el sistema es exclusivo para la universidad.</span><span class="t" lang="en">Belonging: the system is exclusive to the university.</span></p></div></div>
-      </div>
-      <div class="symbols">
-        <div class="symbol"><span class="glyph">Ω</span><div><b>Omega</b><p><span class="t" lang="es">La última letra del alfabeto griego: la estadía es la etapa final de la carrera.</span><span class="t" lang="en">The last letter of the Greek alphabet: the internship is the final stage of the degree.</span></p></div></div>
-        <div class="symbol"><span class="glyph"><img src="expo/img/omega.png" alt="" style="width:60px;background:#fff;border-radius:12px;padding:4px"></span><div><b><span class="t" lang="es">Búho</span><span class="t" lang="en">Owl</span></b><p><span class="t" lang="es">Conocimiento y guía, como el asesor que acompaña al alumno.</span><span class="t" lang="en">Knowledge and guidance, like the advisor who supports the student.</span></p></div></div>
-        <div class="symbol"><span class="glyph"><svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="#22b8d6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><circle cx="12" cy="11" r="3"/><path d="M12 6v2M12 14v2M7 11h2M15 11h2"/></svg></span><div><b><span class="t" lang="es">Escudo y engrane</span><span class="t" lang="en">Shield and gear</span></b><p><span class="t" lang="es">Seguridad de la información y automatización de procesos, con el emblema UT al centro.</span><span class="t" lang="en">Data security and process automation, with the UT emblem at the center.</span></p></div></div>
-      </div>
+    <div class="info-grid">
+      <article class="info">
+        <h3><span class="t" lang="es">¿Qué es?</span><span class="t" lang="en">What is it?</span></h3>
+        <p><span class="t" lang="es">Una plataforma web y móvil de vinculación académica para la UTTEC, con datos compartidos en tiempo real entre todos sus perfiles.</span><span class="t" lang="en">A web and mobile academic placement platform for UTTEC, with data shared in real time across all its profiles.</span></p>
+      </article>
+      <article class="info">
+        <h3><span class="t" lang="es">¿Para qué sirve?</span><span class="t" lang="en">What is it for?</span></h3>
+        <p><span class="t" lang="es">Organiza postulaciones, reportes, citas, calificaciones y cartas, y muestra en qué etapa va cada estadía.</span><span class="t" lang="en">It organizes applications, reports, meetings, grades and letters, and shows the stage each internship is in.</span></p>
+      </article>
+      <article class="info">
+        <h3><span class="t" lang="es">¿A quién va dirigido?</span><span class="t" lang="en">Who is it for?</span></h3>
+        <p><span class="t" lang="es">A alumnos en estadía, asesores académicos, asesores de empresa y al personal de Vinculación que administra el proceso.</span><span class="t" lang="en">Students on internship, academic advisors, company advisors and the Placement Office staff who run the process.</span></p>
+      </article>
     </div>
   </div>
-  <span class="pager">03 / 13</span>
+  <span class="pager">02 / 11</span>
 </section>
 
-<!-- 4 · PROBLEMA / PROPÓSITO -->
-<section class="slide" id="problema">
+<!-- 03 · ERRORES QUE MITIGA -->
+<section class="slide tint" id="errores">
   <div class="wrap">
     <div class="head">
-      <p class="kicker"><span class="n">04</span> <span class="t" lang="es">¿Para qué lo hacemos?</span><span class="t" lang="en">Why are we building it?</span></p>
-      <h2 class="h2"><span class="t" lang="es">Optimizar, agilizar y modernizar las estadías</span><span class="t" lang="en">Optimize, speed up and modernize internships</span></h2>
+      <p class="kicker"><span class="n">03</span> <span class="t" lang="es">Errores que mitiga</span><span class="t" lang="en">Errors it mitigates</span></p>
+      <h2 class="h2"><span class="t" lang="es">Del trabajo manual a un proceso con control</span><span class="t" lang="en">From manual work to a controlled process</span></h2>
+      <p class="lead"><span class="t" lang="es">Los problemas más comunes de una estadía sin sistema y cómo los atiende OmegaUTTEC.</span><span class="t" lang="en">The most common problems of an internship without a system, and how OmegaUTTEC handles them.</span></p>
     </div>
-    <div class="split">
-      <div class="before">
-        <h3><span class="t" lang="es">Hoy</span><span class="t" lang="en">Today</span></h3>
-        <ul>
-          <li><span class="t" lang="es">Formatos llenados a mano, una y otra vez</span><span class="t" lang="en">Forms filled in by hand, again and again</span></li>
-          <li><span class="t" lang="es">Tiempos de espera largos entre alumno, empresa y escuela</span><span class="t" lang="en">Long waits between student, company and school</span></li>
-          <li><span class="t" lang="es">Asesores asignados sin ver su carga real</span><span class="t" lang="en">Advisors assigned without seeing their real workload</span></li>
-          <li><span class="t" lang="es">Reportes técnicos revisados 100% de forma manual</span><span class="t" lang="en">Technical reports reviewed 100% manually</span></li>
-        </ul>
-      </div>
-      <div class="goals">
-        <div class="goal"><h3><span class="t" lang="es">Inserción laboral</span><span class="t" lang="en">Job placement</span></h3><p><span class="t" lang="es">Puente directo alumno–empresa con postulación automatizada.</span><span class="t" lang="en">A direct student–company bridge with automated applications.</span></p></div>
-        <div class="goal"><h3><span class="t" lang="es">Cero datos repetidos</span><span class="t" lang="en">No duplicate data</span></h3><p><span class="t" lang="es">Los formatos se autocompletan al ser aceptado: menos errores humanos.</span><span class="t" lang="en">Forms auto-fill once accepted: fewer human errors.</span></p></div>
-        <div class="goal"><h3><span class="t" lang="es">Carga docente justa</span><span class="t" lang="en">Fair advisor workload</span></h3><p><span class="t" lang="es">Asesores asignados según su disponibilidad en tiempo real.</span><span class="t" lang="en">Advisors assigned by real-time availability.</span></p></div>
-        <div class="goal"><h3><span class="t" lang="es">Mejores evaluaciones</span><span class="t" lang="en">Better evaluations</span></h3><p><span class="t" lang="es">La IA da un prediagnóstico de cada reporte para revisar más rápido.</span><span class="t" lang="en">AI gives a pre-diagnosis of each report for faster reviews.</span></p></div>
-      </div>
+    <div class="err-grid">
+      <article class="err">
+        <span class="was"><span class="t" lang="es">Antes</span><span class="t" lang="en">Before</span></span>
+        <h3><span class="t" lang="es">Formatos llenados a mano, una y otra vez</span><span class="t" lang="en">Forms filled in by hand, again and again</span></h3>
+        <span class="now"><span class="t" lang="es">Con OmegaUTTEC</span><span class="t" lang="en">With OmegaUTTEC</span></span>
+        <p><span class="t" lang="es">Los formatos se autocompletan con los datos ya registrados cuando la postulación es aceptada.</span><span class="t" lang="en">Forms auto-fill with the data already on file once the application is accepted.</span></p>
+      </article>
+      <article class="err">
+        <span class="was"><span class="t" lang="es">Antes</span><span class="t" lang="en">Before</span></span>
+        <h3><span class="t" lang="es">Los mismos datos capturados varias veces</span><span class="t" lang="en">The same data entered several times</span></h3>
+        <span class="now"><span class="t" lang="es">Con OmegaUTTEC</span><span class="t" lang="en">With OmegaUTTEC</span></span>
+        <p><span class="t" lang="es">Un solo registro compartido en tiempo real por alumnos, empresas, asesores y administración.</span><span class="t" lang="en">A single record shared in real time by students, companies, advisors and administration.</span></p>
+      </article>
+      <article class="err">
+        <span class="was"><span class="t" lang="es">Antes</span><span class="t" lang="en">Before</span></span>
+        <h3><span class="t" lang="es">Esperas largas entre alumno, empresa y escuela</span><span class="t" lang="en">Long waits between student, company and school</span></h3>
+        <span class="now"><span class="t" lang="es">Con OmegaUTTEC</span><span class="t" lang="en">With OmegaUTTEC</span></span>
+        <p><span class="t" lang="es">Avisos en la campana: reportes por revisar, citas por confirmar y documentos con correcciones.</span><span class="t" lang="en">Bell notifications for reports to review, meetings to confirm and documents that need corrections.</span></p>
+      </article>
+      <article class="err">
+        <span class="was"><span class="t" lang="es">Antes</span><span class="t" lang="en">Before</span></span>
+        <h3><span class="t" lang="es">Asesores asignados sin ver su carga real</span><span class="t" lang="en">Advisors assigned without seeing their real workload</span></h3>
+        <span class="now"><span class="t" lang="es">Con OmegaUTTEC</span><span class="t" lang="en">With OmegaUTTEC</span></span>
+        <p><span class="t" lang="es">La asignación considera la disponibilidad de cada asesor.</span><span class="t" lang="en">Assignment takes each advisor’s availability into account.</span></p>
+      </article>
+      <article class="err">
+        <span class="was"><span class="t" lang="es">Antes</span><span class="t" lang="en">Before</span></span>
+        <h3><span class="t" lang="es">Reportes técnicos revisados 100% a mano</span><span class="t" lang="en">Technical reports reviewed 100% by hand</span></h3>
+        <span class="now"><span class="t" lang="es">Con OmegaUTTEC</span><span class="t" lang="en">With OmegaUTTEC</span></span>
+        <p><span class="t" lang="es">El preanálisis con IA resume el documento, revisa su estructura y estima si es aprobable. El asesor decide.</span><span class="t" lang="en">The AI pre-analysis summarizes the document, checks its structure and estimates whether it is approvable. The advisor decides.</span></p>
+      </article>
+      <article class="err">
+        <span class="was"><span class="t" lang="es">Antes</span><span class="t" lang="en">Before</span></span>
+        <h3><span class="t" lang="es">Archivos en formatos no válidos o demasiado pesados</span><span class="t" lang="en">Files in invalid formats or too large</span></h3>
+        <span class="now"><span class="t" lang="es">Con OmegaUTTEC</span><span class="t" lang="en">With OmegaUTTEC</span></span>
+        <p><span class="t" lang="es">Solo se aceptan PDF, DOC y DOCX de hasta 10 MB. El CV se sube únicamente en PDF.</span><span class="t" lang="en">Only PDF, DOC and DOCX files up to 10 MB are accepted. CVs are uploaded as PDF only.</span></p>
+      </article>
+      <article class="err">
+        <span class="was"><span class="t" lang="es">Antes</span><span class="t" lang="en">Before</span></span>
+        <h3><span class="t" lang="es">Calificaciones capturadas fuera de tiempo</span><span class="t" lang="en">Grades entered outside the allowed window</span></h3>
+        <span class="now"><span class="t" lang="es">Con OmegaUTTEC</span><span class="t" lang="en">With OmegaUTTEC</span></span>
+        <p><span class="t" lang="es">Cada periodo tiene fechas de captura y un kardex global con estatus de liberación.</span><span class="t" lang="en">Each period has capture dates and a global transcript with a release status.</span></p>
+      </article>
+      <article class="err">
+        <span class="was"><span class="t" lang="es">Antes</span><span class="t" lang="en">Before</span></span>
+        <h3><span class="t" lang="es">Accesos indebidos y cuentas comprometidas</span><span class="t" lang="en">Unauthorized access and compromised accounts</span></h3>
+        <span class="now"><span class="t" lang="es">Con OmegaUTTEC</span><span class="t" lang="en">With OmegaUTTEC</span></span>
+        <p><span class="t" lang="es">Perfiles con acceso restringido, contraseñas generadas por el sistema, enlaces de recuperación de un solo uso y bloqueo de cuentas con motivo.</span><span class="t" lang="en">Profiles with restricted access, system-generated passwords, single-use recovery links and account locks with a stated reason.</span></p>
+      </article>
     </div>
   </div>
-  <span class="pager">04 / 13</span>
+  <span class="pager">03 / 11</span>
 </section>
 
-<!-- 5 · SOLUCIÓN -->
-<section class="slide dark" id="solucion">
-  <div class="wrap">
-    <div class="head">
-      <p class="kicker"><span class="n">05</span> <span class="t" lang="es">La solución</span><span class="t" lang="en">The solution</span></p>
-      <h2 class="h2"><span class="t" lang="es">Una plataforma web, cinco módulos</span><span class="t" lang="en">One web platform, five modules</span></h2>
-      <p class="lead"><span class="t" lang="es">Centralizada y de uso exclusivo para la UTTEC. Cubre el ciclo completo de la estadía.</span><span class="t" lang="en">Centralized and exclusive to UTTEC. It covers the full internship cycle.</span></p>
-    </div>
-    <div class="modules">
-      <div class="mod"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg></div><h3><span class="t" lang="es">Vinculación</span><span class="t" lang="en">Placement</span></h3><p><span class="t" lang="es">Catálogo de empresas afiliadas y envío del CV desde el sistema.</span><span class="t" lang="en">Catalog of partner companies and CV submission from the system.</span></p></div>
-      <div class="mod"><div class="ico"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 14h6M10 18h4"/></svg></div><h3><span class="t" lang="es">Convenios</span><span class="t" lang="en">Agreements</span></h3><p><span class="t" lang="es">El alumno propone nuevas empresas que aún no están en el catálogo.</span><span class="t" lang="en">Students propose new companies not yet in the catalog.</span></p></div>
-      <div class="mod"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg></div><h3><span class="t" lang="es">Empresarial</span><span class="t" lang="en">Company panel</span></h3><p><span class="t" lang="es">La empresa evalúa perfiles y acepta o rechaza postulaciones.</span><span class="t" lang="en">Companies review profiles and accept or reject applications.</span></p></div>
-      <div class="mod"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg></div><h3><span class="t" lang="es">Automatización</span><span class="t" lang="en">Automation</span></h3><p><span class="t" lang="es">Autollenado de formatos, asignación de asesor y carta de aceptación.</span><span class="t" lang="en">Auto-filled forms, advisor assignment and acceptance letter.</span></p></div>
-      <div class="mod ai"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div><h3><span class="t" lang="es">Evaluación con IA</span><span class="t" lang="en">AI-assisted review</span></h3><p><span class="t" lang="es">Revisa estructura, coherencia y ortografía de los reportes técnicos.</span><span class="t" lang="en">Checks structure, coherence and spelling of technical reports.</span></p></div>
-    </div>
-    <div class="roles">
-      <span class="chip"><span class="t" lang="es">Alumno</span><span class="t" lang="en">Student</span></span>
-      <span class="chip"><span class="t" lang="es">Responsable de empresa</span><span class="t" lang="en">Company representative</span></span>
-      <span class="chip"><span class="t" lang="es">Asesor académico</span><span class="t" lang="en">Academic advisor</span></span>
-      <span class="chip"><span class="t" lang="es">Administrador</span><span class="t" lang="en">Administrator</span></span>
-    </div>
-  </div>
-  <span class="pager">05 / 13</span>
-</section>
-
-<!-- 6 · FLUJO -->
+<!-- 04 · CÓMO FUNCIONA (ruleta de 7 etapas con pantallas reales recreadas) -->
 <section class="slide" id="flujo">
   <div class="wrap">
     <div class="head">
-      <p class="kicker"><span class="n">06</span> <span class="t" lang="es">¿Cómo funciona?</span><span class="t" lang="en">How does it work?</span></p>
-      <h2 class="h2"><span class="t" lang="es">El recorrido de una estadía</span><span class="t" lang="en">The journey of an internship</span></h2>
+      <p class="kicker"><span class="n">04</span> <span class="t" lang="es">Cómo funciona</span><span class="t" lang="en">How it works</span></p>
+      <h2 class="h2"><span class="t" lang="es">Las 7 etapas de una estadía, pantalla por pantalla</span><span class="t" lang="en">The 7 stages of an internship, screen by screen</span></h2>
     </div>
-    <div class="flow">
-      <div class="step"><span class="who"><span class="t" lang="es">Alumno</span><span class="t" lang="en">Student</span></span><h3><span class="t" lang="es">Arma su perfil</span><span class="t" lang="en">Builds a profile</span></h3><p><span class="t" lang="es">Elige etiquetas de sus habilidades.</span><span class="t" lang="en">Picks tags for their skills.</span></p></div>
-      <div class="step auto"><span class="who"><span class="t" lang="es">Sistema</span><span class="t" lang="en">System</span></span><h3><span class="t" lang="es">Calcula compatibilidad</span><span class="t" lang="en">Matches skills</span></h3><p><span class="t" lang="es">% de coincidencia con cada vacante.</span><span class="t" lang="en">% match against each opening.</span></p></div>
-      <div class="step"><span class="who"><span class="t" lang="es">Empresa</span><span class="t" lang="en">Company</span></span><h3><span class="t" lang="es">Acepta o rechaza</span><span class="t" lang="en">Accepts or rejects</span></h3><p><span class="t" lang="es">Ve a los aspirantes ordenados por compatibilidad.</span><span class="t" lang="en">Sees applicants ranked by match.</span></p></div>
-      <div class="step auto"><span class="who"><span class="t" lang="es">Sistema</span><span class="t" lang="en">System</span></span><h3><span class="t" lang="es">Documentos y asesor</span><span class="t" lang="en">Paperwork &amp; advisor</span></h3><p><span class="t" lang="es">Genera la carta en PDF y asigna asesor disponible.</span><span class="t" lang="en">Generates the PDF letter and assigns an available advisor.</span></p></div>
-      <div class="step ia"><span class="who">IA · AI</span><h3><span class="t" lang="es">Revisa el reporte</span><span class="t" lang="en">Reviews the report</span></h3><p><span class="t" lang="es">Retroalimentación en menos de 30 s.</span><span class="t" lang="en">Feedback in under 30 s.</span></p></div>
-      <div class="step"><span class="who"><span class="t" lang="es">Asesores</span><span class="t" lang="en">Advisors</span></span><h3><span class="t" lang="es">Califican y firman</span><span class="t" lang="en">Grade and sign</span></h3><p><span class="t" lang="es">Aprobación final, con notificaciones.</span><span class="t" lang="en">Final approval, with notifications.</span></p></div>
-    </div>
-    <div class="legend">
-      <span><i style="background:var(--navy)"></i><span class="t" lang="es">Acción de una persona</span><span class="t" lang="en">Human action</span></span>
-      <span><i style="background:var(--teal)"></i><span class="t" lang="es">Automático</span><span class="t" lang="en">Automatic</span></span>
-      <span><i style="background:var(--cyan)"></i><span class="t" lang="es">Inteligencia Artificial</span><span class="t" lang="en">Artificial Intelligence</span></span>
-    </div>
-  </div>
-  <span class="pager">06 / 13</span>
-</section>
-
-
-<!-- 7 · CICLO OMEGAUTTEC (interfaces reales recreadas) -->
-<section class="slide tint" id="ciclo">
-  <div class="wrap">
-    <div class="head">
-      <p class="kicker"><span class="n">07</span> <span class="t" lang="es">OmegaUTTEC en acción</span><span class="t" lang="en">OmegaUTTEC in action</span></p>
-      <h2 class="h2"><span class="t" lang="es">El ciclo de una estadía, pantalla por pantalla</span><span class="t" lang="en">The internship cycle, screen by screen</span></h2>
-    </div>
-    <div class="cycle-wrap" style="display:contents">
+        <div class="cycle-wrap" style="display:contents">
     <input class="cyc-radio" type="radio" name="etapa" id="e0" checked aria-label="Reproducción automática"><input class="cyc-radio" type="radio" name="etapa" id="e1" aria-label="Etapa 1"><input class="cyc-radio" type="radio" name="etapa" id="e2" aria-label="Etapa 2"><input class="cyc-radio" type="radio" name="etapa" id="e3" aria-label="Etapa 3"><input class="cyc-radio" type="radio" name="etapa" id="e4" aria-label="Etapa 4"><input class="cyc-radio" type="radio" name="etapa" id="e5" aria-label="Etapa 5"><input class="cyc-radio" type="radio" name="etapa" id="e6" aria-label="Etapa 6"><input class="cyc-radio" type="radio" name="etapa" id="e7" aria-label="Etapa 7">
     <div class="cycle-area">
       <div class="cycle-layout">
@@ -316,15 +264,123 @@
     </div>
     </div>
   </div>
-  <span class="pager">07 / 13</span>
+  <span class="pager">04 / 11</span>
 </section>
 
-<!-- 8 · TECNOLOGÍA -->
-<section class="slide tint" id="tecnologia">
+<!-- 05 · VISTAS REALES (capturas del manual de usuario) -->
+<section class="slide dark" id="pantallas">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker"><span class="n">05</span> <span class="t" lang="es">Vistas reales</span><span class="t" lang="en">Real screens</span></p>
+      <h2 class="h2"><span class="t" lang="es">Así se ve el portal</span><span class="t" lang="en">This is what the portal looks like</span></h2>
+      <p class="lead"><span class="t" lang="es">Capturas del manual de usuario, con datos de prueba.</span><span class="t" lang="en">Screenshots from the user manual, with test data.</span></p>
+    </div>
+    <div class="shots">
+      <figure class="shot">
+        <img src="expo/img/app-bienvenida.jpg" alt="Pantalla de bienvenida del portal" loading="lazy">
+        <figcaption><span class="t" lang="es">Inicio del portal</span><span class="t" lang="en">Portal home</span></figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="expo/img/app-ruta.jpg" alt="Ruta de la estadía con sus 7 etapas y el avance del alumno" loading="lazy">
+        <figcaption><span class="t" lang="es">Ruta de la estadía</span><span class="t" lang="en">Internship route</span></figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="expo/img/app-preanalisis.jpg" alt="Preanálisis con IA de un reporte de estadía" loading="lazy">
+        <figcaption><span class="t" lang="es">Preanálisis con IA</span><span class="t" lang="en">AI pre-analysis</span></figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="expo/img/app-kardex.jpg" alt="Kardex global de estadías con estatus de liberación" loading="lazy">
+        <figcaption><span class="t" lang="es">Kardex global</span><span class="t" lang="en">Global transcript</span></figcaption>
+      </figure>
+    </div>
+  </div>
+  <span class="pager">05 / 11</span>
+</section>
+
+<!-- 06 · FUNCIONES -->
+<section class="slide" id="funciones">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker"><span class="n">06</span> <span class="t" lang="es">Funciones</span><span class="t" lang="en">Features</span></p>
+      <h2 class="h2"><span class="t" lang="es">Cinco módulos y herramientas de apoyo</span><span class="t" lang="en">Five modules and support tools</span></h2>
+      <p class="lead"><span class="t" lang="es">Cubren el ciclo completo de la estadía, desde la vinculación con la empresa hasta la carta institucional.</span><span class="t" lang="en">They cover the full internship cycle, from placement with a company to the official letter.</span></p>
+    </div>
+    <div class="modules">
+      <div class="mod"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg></div><h3><span class="t" lang="es">Vinculación</span><span class="t" lang="en">Placement</span></h3><p><span class="t" lang="es">Catálogo de empresas con convenio y envío de CV desde el sistema.</span><span class="t" lang="en">Catalog of partner companies and CV submission from the system.</span></p></div>
+      <div class="mod"><div class="ico"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 14h6M10 18h4"/></svg></div><h3><span class="t" lang="es">Convenios</span><span class="t" lang="en">Agreements</span></h3><p><span class="t" lang="es">El alumno propone empresas que aún no están en el catálogo.</span><span class="t" lang="en">Students propose companies that are not yet in the catalog.</span></p></div>
+      <div class="mod"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg></div><h3><span class="t" lang="es">Empresarial</span><span class="t" lang="en">Company panel</span></h3><p><span class="t" lang="es">La empresa revisa perfiles, acepta o rechaza postulaciones y emite la carta de término.</span><span class="t" lang="en">Companies review profiles, accept or reject applications and issue the completion letter.</span></p></div>
+      <div class="mod"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg></div><h3><span class="t" lang="es">Automatización</span><span class="t" lang="en">Automation</span></h3><p><span class="t" lang="es">Autollenado de formatos, asignación de asesor y carta de aceptación en PDF.</span><span class="t" lang="en">Auto-filled forms, advisor assignment and acceptance letter as PDF.</span></p></div>
+      <div class="mod ai"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div><h3><span class="t" lang="es">Evaluación con IA</span><span class="t" lang="en">AI-assisted review</span></h3><p><span class="t" lang="es">Revisa estructura, coherencia y ortografía de los reportes antes del dictamen.</span><span class="t" lang="en">Checks structure, coherence and spelling of reports before the decision.</span></p></div>
+    </div>
+    <h3 class="sub-head"><span class="t" lang="es">Herramientas de apoyo</span><span class="t" lang="en">Support tools</span></h3>
+    <div class="tools">
+      <div class="tool"><b><span class="t" lang="es">Campana de avisos</span><span class="t" lang="en">Notification bell</span></b><span><span class="t" lang="es">Pendientes de reportes, citas y documentos, con un toque para ir directo.</span><span class="t" lang="en">Pending reports, meetings and documents, one tap away.</span></span></div>
+      <div class="tool"><b><span class="t" lang="es">Citas y asesorías</span><span class="t" lang="en">Meetings and advising</span></b><span><span class="t" lang="es">Calendario con modalidad, asistencia y acuerdos registrados.</span><span class="t" lang="en">Calendar with mode, attendance and agreements on record.</span></span></div>
+      <div class="tool"><b><span class="t" lang="es">Calificaciones por periodo</span><span class="t" lang="en">Grades by period</span></b><span><span class="t" lang="es">Parciales 1, 2 y 3 más evaluación final, numéricas o por nomenclatura.</span><span class="t" lang="en">Partials 1, 2 and 3 plus final evaluation, numeric or by rubric code.</span></span></div>
+      <div class="tool"><b><span class="t" lang="es">Cartas y documentos</span><span class="t" lang="en">Letters and documents</span></b><span><span class="t" lang="es">Emisión, corrección y reemisión de cartas de término y seguimiento documental.</span><span class="t" lang="en">Issuing, correcting and re-issuing completion letters, plus document tracking.</span></span></div>
+      <div class="tool"><b><span class="t" lang="es">Kardex global</span><span class="t" lang="en">Global transcript</span></b><span><span class="t" lang="es">Calificaciones por alumno con estatus de liberación: en proceso, liberado o retenido.</span><span class="t" lang="en">Grades per student with release status: in progress, released or held.</span></span></div>
+      <div class="tool"><b><span class="t" lang="es">Centro de ayuda</span><span class="t" lang="en">Help center</span></b><span><span class="t" lang="es">Preguntas frecuentes y tickets de soporte que atiende administración.</span><span class="t" lang="en">FAQs and support tickets handled by administration.</span></span></div>
+    </div>
+  </div>
+  <span class="pager">06 / 11</span>
+</section>
+
+<!-- 07 · PERFILES -->
+<section class="slide tint" id="perfiles">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker"><span class="n">07</span> <span class="t" lang="es">Perfiles</span><span class="t" lang="en">Profiles</span></p>
+      <h2 class="h2"><span class="t" lang="es">Quién lo usa y para qué</span><span class="t" lang="en">Who uses it and for what</span></h2>
+      <p class="lead"><span class="t" lang="es">Cada perfil ve solo lo que le corresponde, y todos comparten la misma información.</span><span class="t" lang="en">Each profile sees only what applies to it, and everyone shares the same information.</span></p>
+    </div>
+    <div class="profiles">
+      <article class="profile">
+        <span class="role"><span class="t" lang="es">Estudiante</span><span class="t" lang="en">Student</span></span>
+        <h3><span class="t" lang="es">Alumno</span><span class="t" lang="en">Student</span></h3>
+        <ul>
+          <li><span class="t" lang="es">Arma su perfil profesional con habilidades, conocimientos y competencias.</span><span class="t" lang="en">Builds a professional profile with skills, knowledge and competencies.</span></li>
+          <li><span class="t" lang="es">Se postula a empresas con convenio y envía su CV.</span><span class="t" lang="en">Applies to partner companies and sends their CV.</span></li>
+          <li><span class="t" lang="es">Envía sus reportes y consulta calificaciones, citas y cartas.</span><span class="t" lang="en">Submits reports and checks grades, meetings and letters.</span></li>
+        </ul>
+      </article>
+      <article class="profile">
+        <span class="role"><span class="t" lang="es">Empresa</span><span class="t" lang="en">Company</span></span>
+        <h3><span class="t" lang="es">Asesor de empresa</span><span class="t" lang="en">Company advisor</span></h3>
+        <ul>
+          <li><span class="t" lang="es">Revisa postulantes y avanza su proceso de selección.</span><span class="t" lang="en">Reviews applicants and moves them through selection.</span></li>
+          <li><span class="t" lang="es">Da seguimiento a sus practicantes y revisa sus reportes.</span><span class="t" lang="en">Follows up on interns and reviews their reports.</span></li>
+          <li><span class="t" lang="es">Califica cada periodo y emite la carta de término.</span><span class="t" lang="en">Grades each period and issues the completion letter.</span></li>
+        </ul>
+      </article>
+      <article class="profile">
+        <span class="role"><span class="t" lang="es">Docente</span><span class="t" lang="en">Faculty</span></span>
+        <h3><span class="t" lang="es">Asesor académico</span><span class="t" lang="en">Academic advisor</span></h3>
+        <ul>
+          <li><span class="t" lang="es">Revisa cada versión del reporte y emite su dictamen.</span><span class="t" lang="en">Reviews each report version and issues a decision.</span></li>
+          <li><span class="t" lang="es">Programa asesorías y registra la asistencia.</span><span class="t" lang="en">Schedules advising sessions and records attendance.</span></li>
+          <li><span class="t" lang="es">Captura las calificaciones de cada periodo.</span><span class="t" lang="en">Enters grades for each period.</span></li>
+        </ul>
+      </article>
+      <article class="profile">
+        <span class="role"><span class="t" lang="es">Vinculación</span><span class="t" lang="en">Placement</span></span>
+        <h3><span class="t" lang="es">Administración</span><span class="t" lang="en">Administration</span></h3>
+        <ul>
+          <li><span class="t" lang="es">Da de alta alumnos, empresas y asesores.</span><span class="t" lang="en">Registers students, companies and advisors.</span></li>
+          <li><span class="t" lang="es">Abre periodos y gestiona los catálogos académicos.</span><span class="t" lang="en">Opens periods and manages academic catalogs.</span></li>
+          <li><span class="t" lang="es">Supervisa reportes, cartas y el kardex global.</span><span class="t" lang="en">Oversees reports, letters and the global transcript.</span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+  <span class="pager">07 / 11</span>
+</section>
+
+<!-- 08 · ARQUITECTURA -->
+<section class="slide" id="arquitectura">
   <div class="wrap">
     <div class="head">
       <p class="kicker"><span class="n">08</span> <span class="t" lang="es">Arquitectura</span><span class="t" lang="en">Architecture</span></p>
-      <h2 class="h2"><span class="t" lang="es">Con qué lo construimos</span><span class="t" lang="en">What we build it with</span></h2>
+      <h2 class="h2"><span class="t" lang="es">Cómo está construido</span><span class="t" lang="en">How it is built</span></h2>
     </div>
     <div class="stack">
       <div class="layer"><span class="lbl">Frontend</span><h3>Vue.js + Vuetify</h3><p><span class="t" lang="es">Interfaz reactiva y adaptable a móviles.</span><span class="t" lang="en">Reactive, mobile-friendly interface.</span></p></div>
@@ -332,44 +388,51 @@
       <div class="layer"><span class="lbl"><span class="t" lang="es">Base de datos</span><span class="t" lang="en">Database</span></span><h3>PostgreSQL / MySQL</h3><p><span class="t" lang="es">Relaciones muchos a muchos para las etiquetas de habilidades.</span><span class="t" lang="en">Many-to-many relations for skill tags.</span></p></div>
       <div class="layer"><span class="lbl"><span class="t" lang="es">Inteligencia Artificial</span><span class="t" lang="en">Artificial Intelligence</span></span><h3>API IA</h3><p><span class="t" lang="es">OpenAI o Gemini, con prompts ajustados a los lineamientos UTTEC.</span><span class="t" lang="en">OpenAI or Gemini, with prompts tuned to UTTEC guidelines.</span></p></div>
     </div>
-    <div class="nfr">
+    <div class="stats">
+      <div class="stat"><b>4</b><span><span class="t" lang="es">Perfiles de usuario con acceso restringido</span><span class="t" lang="en">User profiles with restricted access</span></span></div>
+      <div class="stat"><b>7</b><span><span class="t" lang="es">Etapas de seguimiento por estadía</span><span class="t" lang="en">Tracking stages per internship</span></span></div>
+      <div class="stat"><b>6</b><span><span class="t" lang="es">Categorías del preanálisis con IA</span><span class="t" lang="en">AI pre-analysis categories</span></span></div>
       <div class="stat"><b>&lt; 30 s</b><span><span class="t" lang="es">Respuesta de la IA por reporte</span><span class="t" lang="en">AI response per report</span></span></div>
-      <div class="stat"><b>99.5%</b><span><span class="t" lang="es">Disponibilidad mínima en la nube</span><span class="t" lang="en">Minimum cloud uptime</span></span></div>
-      <div class="stat"><b>4</b><span><span class="t" lang="es">Roles con acceso restringido</span><span class="t" lang="en">Roles with restricted access</span></span></div>
-      <div class="stat"><b>SSL</b><span><span class="t" lang="es">Contraseñas cifradas y SSL</span><span class="t" lang="en">Encrypted passwords and SSL</span></span></div>
+    </div>
+    <div class="secure">
+      <h3><span class="t" lang="es">Seguridad y acceso</span><span class="t" lang="en">Security and access</span></h3>
+      <ul>
+        <li><span class="t" lang="es">Contraseñas cifradas y conexión segura por SSL.</span><span class="t" lang="en">Encrypted passwords and an SSL-secured connection.</span></li>
+        <li><span class="t" lang="es">Contraseñas generadas por el sistema y enlaces de recuperación de un solo uso.</span><span class="t" lang="en">System-generated passwords and single-use recovery links.</span></li>
+        <li><span class="t" lang="es">Bloqueo de cuentas por administración, con motivo visible para el usuario.</span><span class="t" lang="en">Account locks by administration, with the reason shown to the user.</span></li>
+        <li><span class="t" lang="es">Acceso exclusivo para la comunidad de la UTTEC.</span><span class="t" lang="en">Access exclusive to the UTTEC community.</span></li>
+      </ul>
     </div>
   </div>
-  <span class="pager">08 / 13</span>
+  <span class="pager">08 / 11</span>
 </section>
 
-<!-- 9 · METODOLOGÍA -->
-<section class="slide" id="metodologia">
+<!-- 09 · DESARROLLO (metodología y cronograma) -->
+<section class="slide tint" id="desarrollo">
   <div class="wrap">
     <div class="head">
-      <p class="kicker"><span class="n">09</span> <span class="t" lang="es">Ciclo de vida</span><span class="t" lang="en">Life cycle</span></p>
-      <h2 class="h2"><span class="t" lang="es">Metodología ágil: Scrum</span><span class="t" lang="en">Agile methodology: Scrum</span></h2>
+      <p class="kicker"><span class="n">09</span> <span class="t" lang="es">Desarrollo</span><span class="t" lang="en">Development</span></p>
+      <h2 class="h2"><span class="t" lang="es">Metodología ágil y cronograma</span><span class="t" lang="en">Agile methodology and schedule</span></h2>
       <p class="lead"><span class="t" lang="es">Iterativo e incremental: cada módulo se desarrolla, prueba y valida por separado en sprints.</span><span class="t" lang="en">Iterative and incremental: each module is built, tested and validated separately in sprints.</span></p>
     </div>
     <div class="method">
-      <div class="scrum">
-        <svg viewBox="0 0 300 300" role="img" aria-label="Ciclo Scrum">
+              <svg viewBox="0 0 300 300" role="img" aria-label="Ciclo Scrum">
           <circle cx="150" cy="150" r="104" fill="none" stroke="#ccfbf1" stroke-width="26"/>
-          <circle cx="150" cy="150" r="104" fill="none" stroke="#0d9488" stroke-width="4" stroke-dasharray="30 12"/>
-          <circle cx="150" cy="150" r="62" fill="#14305c"/>
+          <circle cx="150" cy="150" r="104" fill="none" stroke="#087068" stroke-width="4" stroke-dasharray="30 12"/>
+          <circle cx="150" cy="150" r="62" fill="#133158"/>
           <text x="150" y="146" text-anchor="middle" fill="#ffffff" font-family="Sora, sans-serif" font-weight="700" font-size="22">Sprint</text>
-          <text x="150" y="168" text-anchor="middle" fill="#22b8d6" font-family="JetBrains Mono, monospace" font-size="11">DAILY · 15 MIN</text>
-          <g font-family="Lexend, sans-serif" font-size="13" fill="#14305c" font-weight="600" text-anchor="middle">
-            <rect x="105" y="20" width="90" height="28" rx="14" fill="#ffffff" stroke="#0d9488"/>
+          <text x="150" y="168" text-anchor="middle" fill="#14b8a6" font-family="JetBrains Mono, monospace" font-size="11">DAILY · 15 MIN</text>
+          <g font-family="Lexend, sans-serif" font-size="13" fill="#133158" font-weight="600" text-anchor="middle">
+            <rect x="105" y="20" width="90" height="28" rx="14" fill="#ffffff" stroke="#087068"/>
             <text x="150" y="39">Backlog</text>
-            <rect x="215" y="136" width="80" height="28" rx="14" fill="#ffffff" stroke="#0d9488"/>
+            <rect x="215" y="136" width="80" height="28" rx="14" fill="#ffffff" stroke="#087068"/>
             <text x="255" y="155" class="t" lang="es">Planeación</text><text x="255" y="155" class="t" lang="en">Planning</text>
-            <rect x="105" y="252" width="90" height="28" rx="14" fill="#ffffff" stroke="#0d9488"/>
+            <rect x="105" y="252" width="90" height="28" rx="14" fill="#ffffff" stroke="#087068"/>
             <text x="150" y="271" class="t" lang="es">Revisión</text><text x="150" y="271" class="t" lang="en">Review</text>
-            <rect x="5" y="136" width="80" height="28" rx="14" fill="#ffffff" stroke="#0d9488"/>
+            <rect x="5" y="136" width="80" height="28" rx="14" fill="#ffffff" stroke="#087068"/>
             <text x="45" y="155">Retro</text>
           </g>
         </svg>
-      </div>
       <ol class="phases">
         <li><div><b><span class="t" lang="es">Planificación y requerimientos</span><span class="t" lang="en">Planning &amp; requirements</span></b><p><span class="t" lang="es">Roles de usuario, historias de usuario y backlog priorizado.</span><span class="t" lang="en">User roles, user stories and a prioritized backlog.</span></p></div></li>
         <li><div><b><span class="t" lang="es">Diseño</span><span class="t" lang="en">Design</span></b><p><span class="t" lang="es">Base de datos normalizada, arquitectura MVC y wireframes UI/UX.</span><span class="t" lang="en">Normalized database, MVC architecture and UI/UX wireframes.</span></p></div></li>
@@ -379,18 +442,8 @@
         <li><div><b><span class="t" lang="es">Mantenimiento</span><span class="t" lang="en">Maintenance</span></b><p><span class="t" lang="es">Monitoreo, corrección de bugs y mejoras a la IA.</span><span class="t" lang="en">Monitoring, bug fixes and AI improvements.</span></p></div></li>
       </ol>
     </div>
-  </div>
-  <span class="pager">09 / 13</span>
-</section>
-
-<!-- 10 · CRONOGRAMA -->
-<section class="slide tint" id="cronograma">
-  <div class="wrap">
-    <div class="head">
-      <p class="kicker"><span class="n">10</span> <span class="t" lang="es">Cronograma</span><span class="t" lang="en">Schedule</span></p>
-      <h2 class="h2"><span class="t" lang="es">8 meses · 32 semanas</span><span class="t" lang="en">8 months · 32 weeks</span></h2>
-    </div>
-    <div class="gantt-box">
+    <h3 class="sub-head"><span class="t" lang="es">Cronograma · 8 meses · 32 semanas</span><span class="t" lang="en">Schedule · 8 months · 32 weeks</span></h3>
+        <div class="gantt-box">
       <div class="gantt">
         <span style="grid-row:1;grid-column:1"></span>
         <span class="mh" style="grid-row:1;grid-column:2/span 4"><span class="t" lang="es">MES 1</span><span class="t" lang="en">MONTH 1</span></span>
@@ -428,113 +481,37 @@
         <span class="today" style="grid-row:2/15"></span>
       </div>
     </div>
-    <div class="legend">
+        <div class="legend">
       <span><i style="background:#bfe6f0;border:1px solid var(--cyan);border-radius:4px"></i><span class="t" lang="es">Programado</span><span class="t" lang="en">Planned</span></span>
       <span><i style="background:var(--teal);border-radius:4px"></i><span class="t" lang="es">Real</span><span class="t" lang="en">Actual</span></span>
       <span><i style="border-left:2px dashed var(--risk);border-radius:0;width:2px"></i><span class="t" lang="es">Avance actual: semana 14</span><span class="t" lang="en">Current progress: week 14</span></span>
     </div>
-    <div class="notes">
-      <div class="note"><b><span class="t" lang="es">Análisis terminó antes</span><span class="t" lang="en">Analysis finished early</span></b><span class="t" lang="es">2 semanas en lugar de 4.</span><span class="t" lang="en">2 weeks instead of 4.</span></div>
-      <div class="note"><b><span class="t" lang="es">Planeación se extendió</span><span class="t" lang="en">Planning ran longer</span></b><span class="t" lang="es">Usó ese tiempo y cerró en la semana 8, como estaba previsto.</span><span class="t" lang="en">It used that time and closed in week 8, as planned.</span></div>
-      <div class="note"><b><span class="t" lang="es">Diseño: +1 semana</span><span class="t" lang="en">Design: +1 week</span></b><span class="t" lang="es">Desarrollo arranca en la semana 15.</span><span class="t" lang="en">Development starts in week 15.</span></div>
-    </div>
   </div>
-  <span class="pager">10 / 13</span>
+  <span class="pager">09 / 11</span>
 </section>
 
-<!-- 11 · RIESGOS -->
-<section class="slide tint" id="riesgos">
+<!-- 10 · EQUIPO -->
+<section class="slide" id="equipo">
   <div class="wrap">
-    <div class="head">
-      <p class="kicker"><span class="n">11</span> <span class="t" lang="es">Gestión de riesgos</span><span class="t" lang="en">Risk management</span></p>
-      <h2 class="h2"><span class="t" lang="es">40 riesgos identificados en 6 categorías</span><span class="t" lang="en">40 risks identified across 6 categories</span></h2>
+    <div class="team-top">
+      <img src="expo/img/novustek.jpg" alt="Logo Novus Tek">
+      <div class="head">
+        <p class="kicker"><span class="n">10</span> <span class="t" lang="es">Equipo</span><span class="t" lang="en">Team</span></p>
+        <h2 class="h2"><span class="t" lang="es">Desarrollado por Novus Tek</span><span class="t" lang="en">Developed by Novus Tek</span></h2>
+        <p class="lead"><span class="t" lang="es">Un equipo de cuatro integrantes que diseñó, programó y despliega OmegaUTTEC.</span><span class="t" lang="en">A four-person team that designed, built and deploys OmegaUTTEC.</span></p>
+      </div>
     </div>
-    <div class="risk-layout">
-      <div class="matrix-box">
-        <div class="matrix">
-          <span class="axis-y" style="grid-row:1/4;grid-column:1"><span class="t" lang="es">IMPACTO →</span><span class="t" lang="en">IMPACT →</span></span>
-          <!-- Impacto 3 -->
-          <div class="cell c-mid" style="grid-row:1;grid-column:2"><span class="rk"><span class="t" lang="es">Daño físico de equipos</span><span class="t" lang="en">Physical damage to equipment</span></span><span class="rk"><span class="t" lang="es">Fallo en migración de datos</span><span class="t" lang="en">Data migration failure</span></span></div>
-          <div class="cell c-high" style="grid-row:1;grid-column:3"><span class="rk"><span class="t" lang="es">Caída del servidor cloud</span><span class="t" lang="en">Cloud server outage</span></span><span class="rk"><span class="t" lang="es">Vulnerabilidades de seguridad</span><span class="t" lang="en">Security vulnerabilities</span></span><span class="rk"><span class="t" lang="es">Rotación de personal clave</span><span class="t" lang="en">Key staff turnover</span></span><span class="rk"><span class="t" lang="es">Desviación del presupuesto</span><span class="t" lang="en">Budget overrun</span></span></div>
-          <div class="cell c-high" style="grid-row:1;grid-column:4"><span class="rk"><b><span class="t" lang="es">Sobrecarga de trabajo</span><span class="t" lang="en">Work overload</span></b></span><span class="rk"><b><span class="t" lang="es">Cambios frecuentes en requerimientos</span><span class="t" lang="en">Frequent requirement changes</span></b></span><span class="rk"><b><span class="t" lang="es">Retrasos por problemas técnicos</span><span class="t" lang="en">Delays from technical issues</span></b></span></div>
-          <!-- Impacto 2 -->
-          <div class="cell c-low" style="grid-row:2;grid-column:2"><span class="rk"><span class="t" lang="es">Sistema poco adaptado a móviles</span><span class="t" lang="en">Poor mobile fit</span></span></div>
-          <div class="cell c-mid" style="grid-row:2;grid-column:3"><span class="rk"><span class="t" lang="es">IA tarda más de 30 s</span><span class="t" lang="en">AI takes over 30 s</span></span><span class="rk"><span class="t" lang="es">Incompatibilidad entre frameworks</span><span class="t" lang="en">Framework incompatibility</span></span><span class="rk"><span class="t" lang="es">Conflictos entre roles</span><span class="t" lang="en">Role conflicts</span></span></div>
-          <div class="cell c-high" style="grid-row:2;grid-column:4"><span class="rk"><span class="t" lang="es">Falla de internet del equipo</span><span class="t" lang="en">Team internet outage</span></span><span class="rk"><span class="t" lang="es">Aprobaciones tardías de la UTTEC</span><span class="t" lang="en">Late approvals from UTTEC</span></span></div>
-          <!-- Impacto 1 -->
-          <div class="cell c-low" style="grid-row:3;grid-column:2"></div>
-          <div class="cell c-low" style="grid-row:3;grid-column:3"><span class="rk"><span class="t" lang="es">Obsolescencia de equipos</span><span class="t" lang="en">Hardware obsolescence</span></span></div>
-          <div class="cell c-mid" style="grid-row:3;grid-column:4"><span class="rk"><span class="t" lang="es">Falta de capacitación</span><span class="t" lang="en">Lack of training</span></span></div>
-          <span class="axis-x" style="grid-row:4;grid-column:2/5"><span class="t" lang="es">PROBABILIDAD →</span><span class="t" lang="en">PROBABILITY →</span></span>
-        </div>
-      </div>
-      <div class="risk-side">
-        <div class="cats">
-          <div class="cat"><span><span class="t" lang="es">Personal</span><span class="t" lang="en">Staff</span></span><b>6</b></div>
-          <div class="cat"><span><span class="t" lang="es">Equipamiento</span><span class="t" lang="en">Equipment</span></span><b>7</b></div>
-          <div class="cat"><span><span class="t" lang="es">Cliente</span><span class="t" lang="en">Client</span></span><b>6</b></div>
-          <div class="cat"><span><span class="t" lang="es">Tecnológicos</span><span class="t" lang="en">Technology</span></span><b>7</b></div>
-          <div class="cat"><span><span class="t" lang="es">Entrega</span><span class="t" lang="en">Delivery</span></span><b>7</b></div>
-          <div class="cat"><span><span class="t" lang="es">Administración</span><span class="t" lang="en">Management</span></span><b>7</b></div>
-        </div>
-        <div class="strategy">
-          <div><b><span class="t" lang="es">Prevención</span><span class="t" lang="en">Prevention</span></b><span><span class="t" lang="es">Respaldos, code review y pruebas antes de cada despliegue.</span><span class="t" lang="en">Backups, code review and testing before every deploy.</span></span></div>
-          <div><b><span class="t" lang="es">Mitigación</span><span class="t" lang="en">Mitigation</span></b><span><span class="t" lang="es">Sprints cortos y backlog priorizado para absorber cambios.</span><span class="t" lang="en">Short sprints and a prioritized backlog to absorb changes.</span></span></div>
-          <div><b><span class="t" lang="es">Aceptación</span><span class="t" lang="en">Acceptance</span></b><span><span class="t" lang="es">Riesgos de bajo impacto se monitorean sin acción inmediata.</span><span class="t" lang="en">Low-impact risks are monitored without immediate action.</span></span></div>
-        </div>
-      </div>
+    <div class="team">
+      <div class="member lead"><span class="lead-badge"><span class="t" lang="es">Líder del proyecto</span><span class="t" lang="en">Project lead</span></span><img src="expo/img/cristobal.jpg" alt="Cristóbal Gordillo"><h3>Cristóbal Gordillo</h3><p><span class="t" lang="es">Líder de Diseño y Experiencia de Usuario</span><span class="t" lang="en">Design &amp; UX Lead</span></p></div>
+      <div class="member"><img src="expo/img/jahzeel.jpg" alt="Jessica Alvarado"><h3>Jessica Alvarado</h3><p><span class="t" lang="es">Líder de Programación</span><span class="t" lang="en">Programming Lead</span></p></div>
+      <div class="member"><img src="expo/img/rodrigo.jpg" alt="Rodrigo Villeda"><h3>Rodrigo Villeda</h3><p><span class="t" lang="es">Coordinador de Desarrollo de Software</span><span class="t" lang="en">Software Development Coordinator</span></p></div>
+      <div class="member"><img src="expo/img/demetrio.jpg" alt="Demetrio Peralta"><h3>Demetrio Peralta</h3><p><span class="t" lang="es">Responsable de Operaciones y Logística</span><span class="t" lang="en">Operations &amp; Logistics Manager</span></p></div>
     </div>
   </div>
-  <span class="pager">11 / 13</span>
+  <span class="pager">10 / 11</span>
 </section>
 
-<!-- 12 · STAKEHOLDERS + COMUNICACIÓN -->
-<section class="slide" id="stakeholders">
-  <div class="wrap">
-    <div class="head">
-      <p class="kicker"><span class="n">12</span> <span class="t" lang="es">Personas y comunicación</span><span class="t" lang="en">People and communication</span></p>
-      <h2 class="h2"><span class="t" lang="es">¿A quién involucra y cómo nos coordinamos?</span><span class="t" lang="en">Who is involved and how do we coordinate?</span></h2>
-    </div>
-    <div class="two">
-      <div class="col">
-        <h3>Stakeholders</h3>
-        <div class="sh-group">
-          <span class="tag"><span class="t" lang="es">Internos</span><span class="t" lang="en">Internal</span></span>
-          <div class="pills">
-            <span class="pill"><span class="t" lang="es">Alumnos UTTEC</span><span class="t" lang="en">UTTEC students</span></span>
-            <span class="pill"><span class="t" lang="es">Tutores académicos</span><span class="t" lang="en">Academic advisors</span></span>
-            <span class="pill"><span class="t" lang="es">Departamento de Vinculación</span><span class="t" lang="en">Placement Office</span></span>
-            <span class="pill"><span class="t" lang="es">Equipo Novus Tek</span><span class="t" lang="en">Novus Tek team</span></span>
-            <span class="pill"><span class="t" lang="es">Profesor de la asignatura</span><span class="t" lang="en">Course professor</span></span>
-          </div>
-        </div>
-        <div class="sh-group">
-          <span class="tag"><span class="t" lang="es">Externos</span><span class="t" lang="en">External</span></span>
-          <div class="pills">
-            <span class="pill ext"><span class="t" lang="es">Empresas afiliadas</span><span class="t" lang="en">Partner companies</span></span>
-            <span class="pill ext"><span class="t" lang="es">Asesores empresariales</span><span class="t" lang="en">Company advisors</span></span>
-            <span class="pill ext"><span class="t" lang="es">Proveedores cloud y API de IA</span><span class="t" lang="en">Cloud &amp; AI API providers</span></span>
-            <span class="pill ext"><span class="t" lang="es">Gobierno del Estado de México</span><span class="t" lang="en">State of Mexico Government</span></span>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <h3><span class="t" lang="es">Comunicación interna</span><span class="t" lang="en">Internal communication</span></h3>
-        <ul class="comm">
-          <li><b>Daily · 15 min</b><span><span class="t" lang="es">Qué hice, qué haré, qué me bloquea.</span><span class="t" lang="en">What I did, what I’ll do, what blocks me.</span></span></li>
-          <li><b><span class="t" lang="es">Planeación de sprint</span><span class="t" lang="en">Sprint planning</span></b><span><span class="t" lang="es">Historias de usuario y tareas del backlog.</span><span class="t" lang="en">User stories and backlog tasks.</span></span></li>
-          <li><b><span class="t" lang="es">Tablero Kanban</span><span class="t" lang="en">Kanban board</span></b><span><span class="t" lang="es">Por hacer · En progreso · En pruebas · Terminado.</span><span class="t" lang="en">To do · In progress · Testing · Done.</span></span></li>
-          <li><b>Pull Requests</b><span><span class="t" lang="es">Code review antes de integrar cambios.</span><span class="t" lang="en">Code review before merging changes.</span></span></li>
-          <li><b><span class="t" lang="es">Revisión y retro</span><span class="t" lang="en">Review &amp; retro</span></b><span><span class="t" lang="es">Demostración al cierre de cada sprint y mejora continua.</span><span class="t" lang="en">Demo at the end of each sprint and continuous improvement.</span></span></li>
-          <li><b><span class="t" lang="es">Minutas</span><span class="t" lang="en">Meeting notes</span></b><span><span class="t" lang="es">Acuerdos y requerimientos aprobados, documentados.</span><span class="t" lang="en">Agreements and approved requirements, documented.</span></span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <span class="pager">12 / 13</span>
-</section>
-
-<!-- 13 · CIERRE -->
+<!-- 11 · CIERRE -->
 <section class="slide closing" id="cierre">
   <div class="wrap">
     <div class="logos">
@@ -542,22 +519,22 @@
       <img src="expo/img/novustek.jpg" alt="Novus Tek">
     </div>
     <h2><span class="t" lang="es">¡Gracias!</span><span class="t" lang="en">Thank <b>you!</b></span></h2>
-    <p class="slogan" style="max-width:none"><span class="t" lang="es">¿Preguntas?</span><span class="t" lang="en">Questions?</span></p>
-    <p class="names">Cristóbal Gordillo · Jessica Alvarado · Rodrigo Villeda · Xizmel Hernández · Demetrio Peralta</p>
+    <p class="slogan"><span class="t" lang="es">Tu estadía, en un solo lugar.</span><span class="t" lang="en">Your internship, in one place.</span></p>
     <div class="btns btns-center">
       <a class="btn p" href="https://blemish-symptom-lumber.ngrok-free.dev" target="_blank" rel="noopener"><span class="t" lang="es">Probar la plataforma</span><span class="t" lang="en">Try the platform</span> ↗</a>
       <a class="btn" href="https://drive.google.com/drive/folders/1IfmtpydVZU9CqZasqNs2BTeLyW98MY6g?usp=share_link" target="_blank" rel="noopener"><span class="t" lang="es">Reportes en Drive</span><span class="t" lang="en">Reports on Drive</span> ↗</a>
     </div>
+    <p class="names">Cristóbal Gordillo · Jessica Alvarado · Rodrigo Villeda · Demetrio Peralta</p>
     <p class="note-ext"><span class="t" lang="es">La primera vez, tu navegador puede mostrar una página de aviso de ngrok con el botón «Visit Site». Tócalo para continuar. La plataforma está disponible mientras el servidor del equipo esté encendido.</span><span class="t" lang="en">The first time, your browser may show an ngrok warning page with a «Visit Site» button. Click it to continue. The platform is available while the team’s server is running.</span></p>
   </div>
-  <span class="pager">13 / 13</span>
+  <span class="pager">11 / 11</span>
 </section>
 
 </main>
 
 <footer class="site-foot">
-  <p><b>OmegaUTTEC</b> · Novus Tek · Universidad Tecnológica de Tecámac</p>
-  <p><span class="t" lang="es">Gestión del Proceso de Desarrollo de Software · Grupo 10IDS2</span><span class="t" lang="en">Software Development Process Management · Group 10IDS2</span></p>
+  <p><b>OmegaUTTEC</b> · <span class="t" lang="es">Portal de Vinculación Académica · Universidad Tecnológica de Tecámac</span><span class="t" lang="en">Academic Placement Portal · Universidad Tecnológica de Tecámac</span></p>
+  <p><span class="t" lang="es">Desarrollado por Novus Tek · Gestión del Proceso de Desarrollo de Software · Grupo 10IDS2</span><span class="t" lang="en">Developed by Novus Tek · Software Development Process Management · Group 10IDS2</span></p>
 </footer>
 
 <script>
